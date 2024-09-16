@@ -1,0 +1,107 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>SignupServlet</servlet-name>
+        <servlet-class>SignupServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SignupServlet</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+<servlet>
+    <servlet-name>SignInServlet</servlet-name>
+    <servlet-class>SignInServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SignInServlet</servlet-name>
+    <url-pattern>/signin</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>AddProductServlet</servlet-name>
+    <servlet-class>AddProductServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AddProductServlet</servlet-name>
+    <url-pattern>/addproduct</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>UpdateProductServlet</servlet-name>
+    <servlet-class>UpdateProductServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>UpdateProductServlet</servlet-name>
+    <url-pattern>/updateproduct</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>DeleteProductServlet</servlet-name>
+    <servlet-class>DeleteProductServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DeleteProductServlet</servlet-name>
+    <url-pattern>/deleteproduct</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>GetAllProductsServlet</servlet-name>
+    <servlet-class>GetAllProductsServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>GetAllProductsServlet</servlet-name>
+    <url-pattern>/products</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>AddProductToCartServlet</servlet-name>
+    <servlet-class>AddProductToCartServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AddProductToCartServlet</servlet-name>
+    <url-pattern>/cart/add</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>DeleteProductFromCartServlet</servlet-name>
+    <servlet-class>DeleteProductFromCartServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DeleteProductFromCartServlet</servlet-name>
+    <url-pattern>/cart/delete</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>GetCartServlet</servlet-name>
+    <servlet-class>GetCartServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>GetCartServlet</servlet-name>
+    <url-pattern>/cart</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>PlaceOrderServlet</servlet-name>
+    <servlet-class>PlaceOrderServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>PlaceOrderServlet</servlet-name>
+    <url-pattern>/placeorder</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>GetOrdersServlet</servlet-name>
+    <servlet-class>GetOrdersServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>GetOrdersServlet</servlet-name>
+    <url-pattern>/getorders</url-pattern>
+</servlet-mapping>
+
+</web-app>
